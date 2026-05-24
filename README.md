@@ -293,20 +293,20 @@ class CatDetector:
 1. Build:
 
    ```bash
-   docker build -t <dockerhub-username>/cat-detector:final -f container/Dockerfile .
+   docker build -t zarifamusayeva/cat-detector:final -f container/Dockerfile .
    ```
 
 2. Test locally — create a small folder of test images and confirm both subcommands work:
 
    ```bash
-   docker run --rm <dockerhub-username>/cat-detector:final info
+   docker run --rm zarifamusayeva/cat-detector:final info
 
    mkdir -p /tmp/inp /tmp/out
    cp some/test/images/*.jpg /tmp/inp/
    docker run --rm \
      -v /tmp/inp:/data/input:ro \
      -v /tmp/out:/data/output \
-     <dockerhub-username>/cat-detector:final predict
+     zarifamusayeva/cat-detector:final predict
 
    cat /tmp/out/predictions.csv | head
    ```
@@ -315,7 +315,7 @@ class CatDetector:
 
    ```bash
    docker login
-   docker push <dockerhub-username>/cat-detector:final
+   docker push zarifamusayeva/cat-detector:final
    ```
 
 4. Verify the image works on a clean machine by pulling and running it as if you were the instructor.
