@@ -92,7 +92,7 @@ Choose your **best** run as the model you'll ship.
 
 ```python
 from ultralytics import YOLO
-model = YOLO("runs/<your-best-run>/weights/best.pt")
+model = YOLO("runs/cats_v1/weights/best.pt")
 model.export(format="onnx", imgsz=640, opset=17, dynamic=False)
 ```
 
@@ -333,9 +333,9 @@ A pull request on your fork containing:
 
   ```text
   ## Image for leaderboard
-  docker pull alicegarcia/cat-detector:final
-  Image: alicegarcia/cat-detector:final
-  Student: Alice Garcia
+  docker pull zarifamusayeva/cat-detector:final
+  Image: zarifamusayeva/cat-detector:final
+  Student: Zarifa Musayeva
   ```
 
 ### Definition of done (checklist)

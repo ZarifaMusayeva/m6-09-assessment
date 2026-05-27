@@ -1,0 +1,4 @@
+onnxruntime==1.18.0
+numpy<2
+pillow
+opencv-python-headless

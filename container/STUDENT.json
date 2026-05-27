@@ -1,0 +1,17 @@
+{
+  "first_name": "Zarifa",
+  "last_name": "Musayeva",
+  "team": "zarifa-musayeva",
+  "model": {
+    "framework": "yolo26",
+    "variant": "yolo26s",
+    "imgsz": 640,
+    "epochs_total": 30,
+    "tricks": [
+      "mosaic_augmentation",
+      "onnx_e2e_export",
+      "cpu_optimised_inference"
+    ]
+  },
+  "notes": "Optimised ONNX model for fast CPU inference."
+}
